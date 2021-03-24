@@ -1,0 +1,15 @@
+const mongoose = require('mongoose');
+const ForecastSchema = mongoose.Schema({
+     cityId: {
+         type: String,
+         required: true
+     },
+     currentStats: {
+         temp: String,
+         feelsLike: String,
+         humidity: String
+     },
+     nextFiveDays: {}
+    }
+);
+module.exports = Forecast = mongoose.model('Forecast', ForecastSchema);
