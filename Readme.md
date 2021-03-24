@@ -30,7 +30,6 @@ Content-Length: xy
 ```
 
 ### `GET /forecasts/:cityId`
- or
 ```bash
 curl -i "Content-Type: application/json" -H "auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiJhaml0ZXNocmFqIiwiaWF0IjoxNjE2NTk1MjgxfQ.u0WA7H2ATMfFib2fn4L37SvZHAJuS3ljpwJDPOmpY2E" http://localhost:3000/forecasts/2
 ``` 
