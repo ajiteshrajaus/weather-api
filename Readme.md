@@ -13,14 +13,10 @@ npm start
 **You get:** An `Auth-Token` with which you can make further requests.
 
 **Request:**
-```json
-POST /login HTTP/1.1
-Accept: application/json
-Content-Type: application/json
-Content-Length: xy
+```bash
+curl -i -H "Content-Type: application/json"  -d "{'userId': 'ajiteshraj'} "http://localhost:3000/login"
+``` 
 
-{ "userId": "ajiteshraj"}
-```
 **Successful Response:**
 ```json
 HTTP/1.1 200 OK
@@ -34,7 +30,6 @@ Content-Length: xy
 ```
 
 ### `GET /forecasts/:cityId`
-List the available cities around the specified latitude/longitude within a radius of 10 kilometers Example: http://localhost:3000/forecasts/2
  or
 ```bash
 curl -i "Content-Type: application/json" -H "auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiJhaml0ZXNocmFqIiwiaWF0IjoxNjE2NTk1MjgxfQ.u0WA7H2ATMfFib2fn4L37SvZHAJuS3ljpwJDPOmpY2E" http://localhost:3000/forecasts/2
