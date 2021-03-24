@@ -14,7 +14,7 @@ npm start
 
 **Request:**
 ```bash
-curl -i -H "Content-Type: application/json"  -d "{'userId': 'ajiteshraj'} "http://localhost:3000/login"
+curl -i -H "Content-Type: application/json"  -d "{'userId': 'ajiteshraj'} http://localhost:3000/login
 ``` 
 
 **Successful Response:**
